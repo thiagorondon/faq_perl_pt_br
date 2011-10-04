@@ -1,0 +1,23 @@
+=encoding utf-8
+
+=head0 Questões gerais
+
+=head1 Questões gerais
+
+=head2 O que é Perl ?
+
+(TBR) (01/10/2011) - (Baseado no perlfaq) - Perl é uma linguagem de programação de alto nível com uma herança eclética, escrita por Larry Wall e muitos outros. Ela deriva da linguagem de programação C e, em menor medida, de sed, awk, shell e pelo menos uma dúzia de ferramentas e outras linguagens. Perl facilita a manipulação de processos, arquivos e textos, no que torna particularmente adequado para tarefas que envolvam a prototipagem rápida, utilitários do sistema, ferramentas de software, tarefas de gerenciamento do sistema, acesso ao banco de dados, programação gráfica, redes e programação web. Estes pontos fortes tornam especialmente popular entre os administradores de sistema, autores de script, desenvolvedores web, mas os matemáticos, jornalistas, e até mesmo gerentes também usam Perl. Talvez você deva também.
+
+=head2 É difícil aprender Perl ?
+
+(TBR) (01/10/2011) - (Baseado no perlfaq) Não, Perl é fácil de começar a aprender e fácil de manter o aprendizado, se você já escreveu em C, awk, shell script ou mesmo um programa BASIC, você praticamente já começou a aprender. A maioria das tarefas requerem apenas um pequeno subconjunto da linguagem Perl para serem realizadas. Um dos lemas para desenvolvimento Perl é "há mais de uma maneira de se fazer isto" (TMTOWTDI, pronunciado algumas vezes como "tim toady"). Portando a curva de aprendizado é pequena (fácil de aprender) e longo (pois há muita coisa que você possa fazer, caso você realmente queira).
+
+=head2 Como comparar Perl com outras linguagens, como Java, Python, Scheme ou TCL ?
+
+(TBR) (01/10/2011) - (Baseado no perlfaq) É melhor em algumas áreas, e pior em outras. Precisamente quais áreas são boas ou ruins geralmente é uma escolha pessoal, e esta é o tipo de questão que pode gerar discussões sem conclusões em muitos casos. Provavelmente a melhor coisa a se fazer, é experimentar escrever código nas diversas linguagens e tirar suas próprias conclusões. Mas, caso você realmente queira uma resposta, visite este link http://www.perl.com/doc/FMTEYEWTK/versus/, no qual você pode encontrar algumas comparações entre elas.
+
+=head2 Como contribuir com o FAQ ?
+
+(TBR) (30/09/2011) - Você pode enviar um e-mail com sugestões, adições ou correções para a lista da São Paulo Perl Mongers (http://sao-paulo.pm.org/), utilizamos a lista do grupo para centralizar o esforço para construção deste FAQ.
+
+

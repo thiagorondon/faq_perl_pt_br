@@ -1,0 +1,58 @@
+=encoding utf-8
+
+=head0 Obtendo, Socializando e Aprendendo Perl.
+
+=head1 Obtendo, Socializando e Aprendendo Perl.
+
+=head2 Qual a última versão do Perl estável ?
+
+(TBR) (28/09/2011) - Para saber a última versão disponível da linguagem Perl, acesse o site http://www.perl.org/. 
+
+=head2 Qual tipo de plataforma/máquinas são suportas pelo Perl ? Onde eu posso conseguir ?
+
+(TBR) (01/10/2011) - A distribuição do Perl é feita apenas via código fonte (pelo time de desenvolvimento da linguagem) e você pode obter informações das últimas versões neste link - http://www.cpan.org/src/README.html. Perl suporta muitas plataformas, é dito que todas as derivações de UNIX são suportas e outros sistemas como  VMS, DOS, OS/2, Windows, QNX, BeOS, OS X, MPE/iX e Amiga.
+
+=head2 Onde eu posso buscar por versões binárias do Perl ?
+
+(TBR) (01/10/2011) (Tradução perlfaq):
+
+* ActiveState: Windows, Linux, Mac OS X, Solaris, AIX and HP‐UX
+
+               http://www.activestate.com/
+
+* Sunfreeware.com: Solaris 2.5 to Solaris 10 (SPARC and x86)
+
+               http://www.sunfreeware.com/
+
+* Strawberry Perl: Windows, Perl 5.8.8 and 5.10.0
+
+               http://www.strawberryperl.com
+
+* IndigoPerl: Windows
+
+               http://indigostar.com/
+
+
+=head2 O que são Perl Mongers ?
+
+(TBR) (28/09/2011) - São grupos de usuários Perl localizados em determinados locais e que utilizam uma lista de discussão, IRC, realizam encontros sóciais e técnicos para debater sobre perl e tudo o que for interessante. Há uma listagem de grupos disponiveis no Brasil em http://www.pm.org/groups/brazil.html, porém os mais ativos atualmente é a São Paulo-PM (http://sao-paulo.pm.org) e a Rio-PM (http://rio.pm.org). Veja mais grupos no mundo em http://www.pm.org/.
+
+=head2 Onde encontrar entusiastas de Perl ?
+
+(TBR) (28/09/2011) - Um bom local são as listas de discussão, canais de IRC na rede irc.perl.org e encontros sociais e técnicos realizados pelos mongers.
+
+=head2 Como eu encontro documentação sobre uma determinada função, ou manual do Perl ?
+
+(TBR) (04/10/2011) - Há um aplicativo "perldoc" que acompanha a distribuição oficial do Perl, que pode ser invocada pela linha de comando para visualizar manuais, informações sobre uma determinada função e sobre algum módulo caso há documentação disponível, que normalmente é a maioria dos casos. Para mais inforamações, digite:
+
+         perldoc perldoc
+
+=head2 Qual a melhor maneira para se instalar um módulo ?
+
+(TBR) (28/09/2011) - O aplicativo mais simples para instalar módulos é o cpanminus (http://search.cpan.org/dist/App-cpanminus/). Porém, ele não vem por padrão na distribuição do Perl e por isto é necessário a instalação, em ambientes unix com acesso a Internet a linha de comando "curl -L http://cpanmin.us | perl - App::cpanminus" basta para instalar o aplicativo. Depois de instalado, basta digitar "cpanm" seguido do módulo que quer instalar, por exemplo: "cpanm Moose".
+
+=head2 O que é Perl Moderno ?
+
+(MAR) (30/09/2011) - Para esta pergunta há um livro (https://github.com/chromatic/modern_perl_book/), e ainda dentro deste assunto, o chromatic fez um post bacana, quem esta começando a programar Perl ou quer melhorar, recomendo http://www.modernperlbooks.com/mt/2011/09/how-to-learn-perl.html
+
+

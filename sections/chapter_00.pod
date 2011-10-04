@@ -1,0 +1,43 @@
+=encoding utf-8
+
+=head0 * Introdução
+
+=head1 Apresentação
+
+Este FAQ contém dúvidas frequentes que são questionadas na lista de discussão da São Paulo
+Perl Mongers. Caso tenha alguma pergunta nova, entre em contato com o mantenedor deste FAQ.
+
+=begin regras
+
+=over 4
+
+=item * Apenas uma resposta por autor para cada pergunta.
+
+=item *  O autor deve ter um ID no CPAN.
+
+=item * Este documento esta sobre Creative Commons.
+
+=back
+
+Esta obra esta licenciada sob uma Licença Creative Commons Atribuição 3.0 Unported.
+
+=end regras
+
+=head1 Créditos
+
+Segue a lista dos contribuidores deste FAQ, eles estão listados por ordem alfabetica, e é
+utilizado a abreveação que esta logo a frente do nome para identificar quem respondeu as
+perguntas.
+
+=over 4
+
+=item * DAN: Daniel Mantovani (http://search.cpan.org/~mantovani/)
+
+=item * GAB: Gabriel Andrade (http://search.cpan.org/~gabiru/)
+
+=item * MAR: Marcio Ferreira (http://search.cpan.org/~marcio)
+
+=item * TBR: Thiago Rondon (http://search.cpan.org/~tbr)
+
+=back
+

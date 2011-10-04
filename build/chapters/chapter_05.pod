@@ -1,0 +1,17 @@
+=encoding utf-8
+
+=head0 Manipulação de dados
+
+=head1 Manipulação de dados
+
+=head2 Como reconhecer e processar estruturas textuais relativamente complexas? Ex: fórmulas matemáticas como: z^2 = ((1^(sqrt(zx))/(x^(x*y)))/e-(xy-235)^(1/2))/(8-(x^(y-1)))
+
+(GAB) (30/09/2011) - Você pode se arriscar construir uma expressão regular imensa, que muito provavelmente só funcionará para um subconjunto limitado da estrutura do texto de entrada, ou pode usar o módulo Regexp::Grammars (https://metacpan.org/module/Regexp::Grammars).
+
+Com ele é possível processar estruturas textuais complexas, hierárquicas e até recursivas. O Regexp::Grammars se aproveita de algumas novas funcionalidades introduzidas no Perl 5.10 para adicionar algumas extensões nas expressões regulares permitindo definir a estrutura dos dados de entrada usando construções em forma de gramáticas (http://www.engr.mun.ca/~theo/Misc/exp_parsing.htm).
+
+No fim da operação você tem disponível na variável %/ seus dados hierarquicamente representados numa estrutura em árvore de hashes aninhados.
+
+Vale a pena dar uma olhada nos exemplos da documentação e na pasta demo/ presente no diretório raiz do módulo.
+
+

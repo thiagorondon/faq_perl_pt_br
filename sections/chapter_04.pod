@@ -1,0 +1,43 @@
+=encoding utf-8
+
+=head0 Questões sobre a linguagem Perl
+
+=head1 Questões sobre a linguagem Perl
+
+=head2 Como eu crio uma classe ?
+
+(TBR) (01/10/2011) - (baseado na tradução do perlfaq) Em Perl, classes são apenas pacotes e métodos são apenas funções. Perl não tem nada formal além disto para este caso, não há nenhuma "configuração" pre-estabelecida para um pacote, você pode fazer o que bem entender com ele. A documentação do Perl tem vários documentos que cobrem este assunto, tais como perlboot (Tutorial Barnyard Object Oriented), perltoot (Tom Tutorial objeto Oriented), perlbot (Truques Bag o 'Object), e perlobj.
+
+=head2 Qual a diferença de invocar uma função como &foo ou foo() ?
+
+(TBR) (01/10/2011) - (baseado na tradução do perlfaq) Invocar uma função como "&foo" sem parenteses, ignora o prototipo de "foo" e repassar o valor atual da lista de argumentos, @_. Veja um exemplo, onde a função "bar" chama por "&foo", e irá permamecer com os valores repassados para bar.
+
+
+               sub bar { &foo }
+
+               sub foo { print "Args in foo are: @_\n" }
+
+               bar( qw( a b c ) );
+
+
+Quando você invocar "bar" com argumentos, você irá ver que os argumentos repassados para "foo", serão os mesmos presentes em @_. 
+                
+                Os argumentos em foo são: a b c
+
+Chamando a função com parenteses, com ou sem argumentos, não irá fazer com que o atual @_ seja utilizado. Alterando o exemplo, e adicionando parenteses para invocar "foo", veja qual será o resultado:
+
+
+               sub bar { &foo() }
+
+               sub foo { print "Args in foo are: @_\n" }
+
+               bar( qw( a b c ) );
+
+
+Agora a saída de "foo", não terá o @_ de quem o invocou.
+
+                Os argumentos em foo são:
+
+A principal função de usar a característica do @_, é para escrever funções que serão invocadas pelo objetivo principal. Para mais detalhes veja a documentação "perlsub".
+')
+

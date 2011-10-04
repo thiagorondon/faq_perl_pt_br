@@ -1,0 +1,24 @@
+=encoding utf-8
+
+=head0 Soluções disponíveis em Perl
+
+=head1 Soluções disponíveis em Perl
+
+=head2 Monitoramento
+
+(TBR) (28/09/2011) - Nagios provavelmente é a aplicação de monitoramento mais popular, no qual oferece vários
+recursos, tais como monitoração de rede ou recursos (opcionalmente com uso de hirarquia de recursos) e fácil 
+desenvolvimento de plugins. Além de monitorar, há como definir controles sobre como isto será feito em 
+relação ao volume de requisições há um determinado objetivo, assim como definir maneiras pró-ativas de
+tratar determinado evento em casos pré-determinados, e tudo isto com uma interface web ou em arquivos de logs
+para visualizar tudo o que acontece.
+
+=head2 ORM e módulos para acesso a banco de dados.
+
+(DAN) (28/10/2011) - São importantes porque eles fazem parte das boas práticas de Engenharia de Software (Livro Semantic Web, página 11), O DBIx::Class simplesmente mapeia o seu banco de dados relacional em classes usando objetos intermediários. (http://search.cpan.org/~abraxxa/DBIx-Class-0.08195/lib/DBIx/Class/Manual/Intro.pod)
+
+=head2 Frameworks web.
+
+(TBR) (28/09/2011) - Existem muitos frameworks web disponíveis no mundo Perl. Porém, na minha opinião é recomendado a utilização do Catalyst, por ser um framework maduro, com uma comunidade solida e com um universo de módulos ao redor muito bem organizado. 
+
+

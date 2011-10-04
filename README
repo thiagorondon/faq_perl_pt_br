@@ -1,0 +1,13 @@
+
+Construindo o livro
+-------------------
+
+  $ perl build/tools/build_chapters.pl
+  
+  $ perl build/tools/build_html.pl
+  $ perl build/tools/build_epub.pl
+  $ perl build/tools/build_pdf.pl
+
+
+Os scripts para gerar este livro foram criados no projeto do "Modern Perl Book" (https://github.com/chromatic/modern_perl_book)
+
