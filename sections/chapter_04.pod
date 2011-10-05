@@ -26,7 +26,6 @@ Quando você invocar "bar" com argumentos, você irá ver que os argumentos repa
 
 Chamando a função com parenteses, com ou sem argumentos, não irá fazer com que o atual @_ seja utilizado. Alterando o exemplo, e adicionando parenteses para invocar "foo", veja qual será o resultado:
 
-
                sub bar { &foo() }
 
                sub foo { print "Args in foo are: @_\n" }
@@ -40,4 +39,10 @@ Agora a saída de "foo", não terá o @_ de quem o invocou.
 
 A principal função de usar a característica do @_, é para escrever funções que serão invocadas pelo objetivo principal. Para mais detalhes veja a documentação "perlsub".
 ')
+
+=head2 Como criar um módulo ?
+
+(TBR) (05/10/2011) - Há vários manuais disponíveis para auxiliar na criação de módulos, são eles: perlmod, perlmodlib, perlmodstyle e perlnewmod. Além da documentação, há módulos para ajudar na criação de módulos, tais como L<ExtUtils::ModuleMaker> e L<Module::Starter>, e caso você precise utilizar da linguagem C, veja mais informações sobre o L<h2xs>.
+
+Há também gerenciadores mais esperto para lídar com seu módulo, veja também o L<Dist::Zill> e o L<Shipit>.
 
