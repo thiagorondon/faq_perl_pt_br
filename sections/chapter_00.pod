@@ -4,8 +4,9 @@
 
 =head1 Apresentação
 
-Este FAQ contém dúvidas frequentes que são questionadas na lista de discussão da São Paulo
-Perl Mongers. Caso tenha alguma pergunta nova, entre em contato com o mantenedor deste FAQ.
+Este FAQ contém dúvidas frequentes que são questionadas na lista de discussão
+brasileiras sobre Perl. Caso tenha alguma pergunta nova, entre em contato com 
+o mantenedor deste FAQ.
 
 =begin regras
 
@@ -32,6 +33,8 @@ perguntas.
 =over 4
 
 =item * DAN: Daniel Mantovani (http://search.cpan.org/~mantovani/)
+
+=item * EDE: Eden Cardim (http://search.cpan.org/~edenc/)
 
 =item * GAB: Gabriel Andrade (http://search.cpan.org/~gabiru/)
 
