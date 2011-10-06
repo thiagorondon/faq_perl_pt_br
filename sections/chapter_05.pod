@@ -14,4 +14,27 @@ No fim da operação você tem disponível na variável %/ seus dados hierarquic
 
 Vale a pena dar uma olhada nos exemplos da documentação e na pasta demo/ presente no diretório raiz do módulo.
 
+=head2 Tem uma forma rápida de verificar/manipular um valor dentro de um hash ou array sem usar uma variável temporária?
+
+(EDE) (06/10/2011) - A forma tradicional de validar um valor dentro de um hash é usando uma variável temporária para evitar o trabalho de referenciar o valor toda hora:
+
+    my $hash = { int => 20, str => 'blah' };
+
+    my $int = $hash->{int};
+    return defined $int
+     and length $int
+     and $int =~ /^\d$/;
+
+Isso tudo pode ser encurtado para:
+
+    return defined and length
+        for $hash->{int};
+
+Você também fazer modificações dentro do hash, já que o for cria um alias. Por exemplo, para remover os espaços do começo da string,
+substituir ' ' por '_', remover o último "\n" e depois imprimir, mas só se a string resultante tiver mais de 10 caracteres:
+
+    s/^\s*//, tr/ /_/, chomp, length > 10 and print for $hash->{str};
+
+Uma das vantagens de se usar for invés de uma atribuição diretamente para a variável $_ é que o for declara $_ como local automaticamente antes de criar o alias, assim você não corre o risco de pisotear algum valor pré-existente.
+
 
