@@ -4,3 +4,8 @@
 
 =head1 Expressões regulares
 
+=head2 Como eu posso efetuar uma comparação aproximada em uma string ?
+
+(TBR) (06/10/2011) Verifique o módulo L<String::Approx> disponível no CPAN.
+
+
