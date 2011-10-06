@@ -46,3 +46,27 @@ A principal função de usar a característica do @_, é para escrever funções
 
 Há também gerenciadores mais esperto para lídar com seu módulo, veja também o L<Dist::Zill> e o L<Shipit>.
 
+=head2  Como eu crio um select/case/switch eficiente em perl?
+
+(EDE) (06/10/2011) - A linguagem tem suporte nativo a esse tipo de construção desde a versão 5.10:
+
+    given($status) {
+      when(/^404$/) { print "página não encontrada\n" }
+      when(/^500$/) { print "erro no servidor\n" }
+      when(/^302$/) { print "você foi redirecionado\n" }
+      default       { print ""resposta desconhecida" }
+    }
+
+O problema com esse tipo de abordagem é que para valores '302', o teste vai sempre passar pelo teste de '404' e '500', e falhar antes de testar positivamente, quanto mais valores possíveis, mais testes redundantes são executados. O pior caso é quando você cai no valor default onde todos os testes são executados.
+
+Esse problema pode ser resolvido com uma construção um pouco menos legível mas muito mais eficiente, usando uma tabela de dispatch, da seguinte forma:
+
+    ({
+         404 => sub { print "página não encontrada\n" },
+         500 => sub { print "erro no servidor\n" },
+         302 => sub { print "você foi redirecionado\n" }
+    }->{$status} or sub { print "resposta desconhecida" })->()
+
+Isso fará com que apenas uma operação de lookup seja executada, qualquer que seja o valor de $status, sendo assim, bem mais eficiente do que usar a construção given/when. Obviamente isso só funciona quando se deseja comparações exatas de valores, caso você precise casar com uma regex para fazer o dispatch, a solução é usar given/when.
+
+
