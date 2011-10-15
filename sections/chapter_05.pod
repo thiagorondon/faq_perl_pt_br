@@ -37,4 +37,17 @@ substituir ' ' por '_', remover o último "\n" e depois imprimir, mas só se a s
 
 Uma das vantagens de se usar for invés de uma atribuição diretamente para a variável $_ é que o for declara $_ como local automaticamente antes de criar o alias, assim você não corre o risco de pisotear algum valor pré-existente.
 
+=head2 Como verificar se um valor está dentro de um array?
 
+(WAL) (15/10/2011) - Uma das formas de se fazer tal verificação é percorrendo
+sequencialmente todos os valores dentro do seu array até que se defina ou não
+a sua presença. Exemplo:
+
+    return grep { $valor eq $_ } @array;
+
+Uma forma melhorada disto seria usar uma hashtable (ou hashmap):
+
+    return { map { $_ => 1 } @array }->{$valor};
+
+desta forma, não importa a quantidade de itens que você tem dentro do @array
+pois o lookup do valor terá custo constante no pior caso.
