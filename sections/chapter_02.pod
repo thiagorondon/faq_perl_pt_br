@@ -41,6 +41,9 @@
 
 (TBR) (28/09/2011) - Um bom local são as listas de discussão, canais de IRC na rede irc.perl.org e encontros sociais e técnicos realizados pelos mongers.
 
+(WAL) (15/10/2011) - Acesse o site http://www.pm.org/ e procure por um grupo
+Perl monger próximo a você.
+
 =head2 Como eu encontro documentação sobre uma determinada função, ou manual do Perl ?
 
 (TBR) (04/10/2011) - Há um aplicativo "perldoc" que acompanha a distribuição oficial do Perl, que pode ser invocada pela linha de comando para visualizar manuais, informações sobre uma determinada função e sobre algum módulo caso há documentação disponível, que normalmente é a maioria dos casos. Para mais inforamações, digite:
