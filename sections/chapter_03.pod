@@ -29,3 +29,20 @@ website para sua comunidade/grupo/religão/etc, ou ainda para aquele amigo/paren
 que lhe importuna dia e noite, você pode usar o L<Web::Simple> que (como o próprio
 nome diz) é um framework destinado à construção de aplicações mais simples como
 os exemplos citados.
+
+=head2 Sistemas de modelo (template systems)
+
+(WAL) (15/10/2011) - É um software que processa um ou mais modelos para produzir
+algum documento, tendo como uma das suas várias aplicações o desenvolvimento de
+aplicações web a fim de prozudir o conteúdo de uma resposta. Dentre os vários
+existentes na CPAN, cito:
+
+=over 4
+
+=item L<Template>
+
+=item L<HTML::Zoom>
+
+=item L<Mason>
+
+=back
