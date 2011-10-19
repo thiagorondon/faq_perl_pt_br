@@ -38,6 +38,8 @@ perguntas.
 
 =item * GAB: Gabriel Andrade (http://search.cpan.org/~gabiru/)
 
+=item * HER: Hernan Lopes (http://search.cpan.org/~hernan/)
+
 =item * MAR: Marcio Ferreira (http://search.cpan.org/~marcio)
 
 =item * TBR: Thiago Rondon (http://search.cpan.org/~tbr)

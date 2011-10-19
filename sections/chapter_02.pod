@@ -37,6 +37,17 @@
 
 (TBR) (28/09/2011) - São grupos de usuários Perl localizados em determinados locais e que utilizam uma lista de discussão, IRC, realizam encontros sóciais e técnicos para debater sobre perl e tudo o que for interessante. Há uma listagem de grupos disponiveis no Brasil em http://www.pm.org/groups/brazil.html, porém os mais ativos atualmente é a São Paulo-PM (http://sao-paulo.pm.org) e a Rio-PM (http://rio.pm.org). Veja mais grupos no mundo em http://www.pm.org/.
 
+(HER) (17/10/2011) - Perl mongers é um serviço de lista de discussão disponibilizado para os desenvolvedores perl no mundo inteiro. 
+
+Cada cidade possúi sua lista de discussão e esta serve como ponto de encontro para conhecer desenvolvedores de cada localidade, discutir problemas e soluções que envolvam perl e até para encontrar profissionais e vagas de trabalho. 
+
+Para saber quais cidades possúem uma lista acesse http://www.pm.org/ e veja. Se sua cidade ainda não possúi uma lista de discussão, você poderá solicitar a criação de uma nova lista para sua cidade. Assim você pode liderar e iniciar as discussões perl na sua região e juntar cada vez mais desenvolvedores. 
+
+Cada lista deve possúir um líder e possivelmente um co-lider que serão os responsáveis por incentivar as discussões e eventos e encontros sociais para integrar o pessoal. 
+
+Para se cadastrar em uma comunidade perl mongers, você pode acessar http://www.pm.org/ e navegar pelo mapa e realizar o cadastro para quantas cidades você queira. Feito isso você poderá participar das discussões respondendo as mensagens enviadas ao seu email.
+
+
 =head2 Onde encontrar entusiastas de Perl ?
 
 (TBR) (28/09/2011) - Um bom local são as listas de discussão, canais de IRC na rede irc.perl.org e encontros sociais e técnicos realizados pelos mongers.
@@ -57,6 +68,57 @@ Perl monger próximo a você.
 =head2 O que é Perl Moderno ?
 
 (MAR) (30/09/2011) - Para esta pergunta há um livro (https://github.com/chromatic/modern_perl_book/), e ainda dentro deste assunto, o chromatic fez um post bacana, quem esta começando a programar Perl ou quer melhorar, recomendo http://www.modernperlbooks.com/mt/2011/09/how-to-learn-perl.html
+
+=head2 O que é o CPAN ? Onde posso encontrar módulos e programas perl ?
+
+(HER) (17/10/2011) - CPAN: 'Comprehensive Perl Archive Network', ou 'Rede de arquivos compreensíveis perl'. Tambem conhecido como repositório de módulos perl.
+
+Neste momento o cpan possúi 98,463 módulos perl em 23,242 distribuições, escritos por 9,170 autores e espelhado em 259 servidores.
+
+No cpan você encontra todo tipo de módulos perl... desde aplicações do google, do twitter, do facebook, etc, implementações de algoritmos de fórmulas bancárias, diversos frameworks, middlewares, bots, ide, servidor web, proxy, o que você imaginar alguem já deve ter implementado e adicionado ao cpan.
+
+Para fazer uma busca no cpan é muito simples, você acessa: http://search.cpan.org e digita algo no campo de busca, ex: "google" para ver uma lista de módulos que implementam "google".
+
+Uma dica para escolher alguns bons módulos é seguir as recomendações do módulo Task::Kensho. o Task::Kensho tem como proposta apresentar os melhores módulos recomendados para tarefas específicas.
+
+=head2 Quais são as vantagens do cpan ? Porque utilizar o cpan ?
+
+(HER) (17/10/2011) - Todos os módulos enviados ao cpan passam por testes
+automatizados. Este procedimento chama-se 'smoke testing', que nada mais é que testes
+iniciais para assegurar que sua aplicação não irá falhar. O módulo
+responsável por automatizar estes testes é o Test::Smoke. E você tambem
+pode configurá-lo para executar em sua máquina. A vantagem disto, é que
+ao subir sua app no cpan, várias pessoas testarão seu código
+automaticamente.. e posteriormente você pode acessar o debug das
+informações em caso de falha. Sua app é testada automaticamente nos
+diversos sistemas operacionais e você pode ver a lista de testes... (ex.
+http://matrix.cpantesters.org/?dist=DBD-mysql+4.020 ). Isto ajuda muito
+para garantir que sua app executou conforme esperado nos diversos
+sistemas. Além disso, você ainda recebe um relatório por email com o
+status dos erros (caso existam).
+
+É importante mencionar a existência do email dos desenvolvedores no
+cpan. Cada pessoa cadastrada no cpan possúi um email. Através deste
+email é possível entrar em contato com o desenvolvedor de um módulo e
+contratá-lo para que este faça alguma melhoria que você precise... ou,
+para que você envie alguma alteração que você fez para melhorar  o
+software.. ou ainda, enviar um patch que conserta um bug que você
+encontrou no módulo. Poder contactar o desenvolvedor diretamente é uma
+grande vantagem! Um outro meio bastante utilizado pelos desenvolvedores
+perl é atraves do IRC no servidor: irc.perl.org (baixe o mIRC, xchat ou
+irssi para conectar ao irc e falar com os desenvolvedores ).
+
+Outro ponto importante no cpan é a documentação dos módulos.. um bom
+módulo deve possuir uma boa documentação. E os desenvolvedores procuram
+manter o alto padrão de qualidade de documentação para seus módulos
+perl. Lembre-se que contribuições para melhoria são sempre bem vindas e
+bem aceitas... ou seja, se algum ponto de alguma documentação não ficou
+claro e você acha que poderia documentar melhor, entre em contato com o
+desenvolvedor e envie um patch para ele substituir e melhorar a
+documentação.
+
+Fora isto, você pode fazer o download de qualquer módulo perl e abrir o código
+fonte...
 
 =head2 Porque não deve instalar módulos do CPAN como root ?
 

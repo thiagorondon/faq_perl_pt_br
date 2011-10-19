@@ -20,10 +20,19 @@ Finalmente, porque Perl é frequentemente(mas não sempre, e certamente não por
 
 Coisas que tornam Perl fácil de aprender: experiência em Unix, quase qualquer tipo de experiência de programação, entendimento de expressões regulares, habilidade de entender código alheio. Se há algo que você precisa fazer, isso provavelmente já foi feito e um exemplo funcional útil está disponível. Não se esqueça de qualquer módulo Perl. Eles são discutidos em outra parte do FAQ, juntamente com CPAN.
 
-
 =head2 Como comparar Perl com outras linguagens, como Java, Python, Scheme ou TCL ?
 
 (TBR) (01/10/2011) - (Baseado no perlfaq) É melhor em algumas áreas, e pior em outras. Precisamente quais áreas são boas ou ruins geralmente é uma escolha pessoal, e esta é o tipo de questão que pode gerar discussões sem conclusões em muitos casos. Provavelmente a melhor coisa a se fazer, é experimentar escrever código nas diversas linguagens e tirar suas próprias conclusões. Mas, caso você realmente queira uma resposta, visite este link http://www.perl.com/doc/FMTEYEWTK/versus/, no qual você pode encontrar algumas comparações entre elas.
+
+=head2 Onde posso encontrar desenvolvedores perl ?
+
+(HER) (17/10/2011) - Você pode acessar o servidor irc.perl.org e entrar no
+canal #perl, #sao-paulo.pm, #rio.pm. No irc você encontra desenvolvedores perl
+conectados 24h e sempre rola muita discussão e compartilhamento de
+conhecimentos interessantes. 
+
+Os grandes mestres desenvovedores perl estão conectados no irc e é lá que eles
+discutem publicamente os rumos e melhorias do desenvolvimento de módulos perl.
 
 =head2 Como contribuir com o FAQ ?
 
