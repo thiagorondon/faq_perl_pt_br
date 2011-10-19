@@ -8,4 +8,22 @@
 
 (TBR) (06/10/2011) Verifique o módulo L<String::Approx> disponível no CPAN.
 
+=head2 Apareceu uma expressão regular bizarra na minha vida, comofaz ?
+
+(MAR) (18/10/2011) Perl é famoso (e as vezes assustador) por seu incrível
+suporte *nativo* a expressões regulares. Infelizmente alguns programadores não
+utilizam recursos da liguagem para tornar seu código mais legível, como o
+modificador //x (veja mais sobre http://perldoc.perl.org/perlretut.html#Building-a-regexp) , que permite você
+segregar sua expressão em blocos, linhas, ou qualquer coisa que _humanos_ possam ler mais facilmente.
+
+Mas até para expressões bizarras, o CPAN tem solução, L<YAPE::Regex::Explain>, Agora  você não precisa mais temer.
+
+    #!/usr/bin/perl
+    use feature 'say';
+    use YAPE::Regex::Explain;
+
+    my $regex = qr/<([^\s]+)(\s[^>]*?)?(?<!)>/;
+
+    say YAPE::Regex::Explain->new($regex)->explain;
+
 

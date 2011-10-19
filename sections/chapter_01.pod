@@ -12,6 +12,15 @@
 
 (TBR) (01/10/2011) - (Baseado no perlfaq) Não, Perl é fácil de começar a aprender e fácil de manter o aprendizado, se você já escreveu em C, awk, shell script ou mesmo um programa BASIC, você praticamente já começou a aprender. A maioria das tarefas requerem apenas um pequeno subconjunto da linguagem Perl para serem realizadas. Um dos lemas para desenvolvimento Perl é "há mais de uma maneira de se fazer isto" (TMTOWTDI, pronunciado algumas vezes como "tim toady"). Portando a curva de aprendizado é pequena (fácil de aprender) e longo (pois há muita coisa que você possa fazer, caso você realmente queira).
 
+(MAR) (18/10/2011) - (tradução do perlfaq) Não, Perl é fácil de começar a aprender e a continuar aprendendo. Perl é parecido com a maioria das linguagens de programação que vocẽ pode ter tido experiência, então se você programa em C, AWK, shell script ou mesmo BASIC, você ja está parcialmente lá.
+
+Muitas tarefas somente requerem um pouco da linguagem Perl. Um dos lemas do desenvolvimento Perl é "existe mais de um modo de faze-lo" (TMTOWDI, as vezes pronunciado "tim toady"). Perl tem uma curva de aprendizado rasa(fácil de aprender) e longa(há chão enquanto você quiser caminhar).
+
+Finalmente, porque Perl é frequentemente(mas não sempre, e certamente não por definição) uma linguagem interpretada, você pode escrever seus programas e testar sem o passo intermediário da compilação, permitindo experimentar e testar/debugar fácil e rapidamente. Esta facilidade de experimentar achata a curva de aprendizado ainda mais.
+
+Coisas que tornam Perl fácil de aprender: experiência em Unix, quase qualquer tipo de experiência de programação, entendimento de expressões regulares, habilidade de entender código alheio. Se há algo que você precisa fazer, isso provavelmente já foi feito e um exemplo funcional útil está disponível. Não se esqueça de qualquer módulo Perl. Eles são discutidos em outra parte do FAQ, juntamente com CPAN.
+
+
 =head2 Como comparar Perl com outras linguagens, como Java, Python, Scheme ou TCL ?
 
 (TBR) (01/10/2011) - (Baseado no perlfaq) É melhor em algumas áreas, e pior em outras. Precisamente quais áreas são boas ou ruins geralmente é uma escolha pessoal, e esta é o tipo de questão que pode gerar discussões sem conclusões em muitos casos. Provavelmente a melhor coisa a se fazer, é experimentar escrever código nas diversas linguagens e tirar suas próprias conclusões. Mas, caso você realmente queira uma resposta, visite este link http://www.perl.com/doc/FMTEYEWTK/versus/, no qual você pode encontrar algumas comparações entre elas.
