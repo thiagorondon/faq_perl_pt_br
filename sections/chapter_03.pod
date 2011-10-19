@@ -17,8 +17,32 @@ para visualizar tudo o que acontece.
 
 (DAN) (28/10/2011) - São importantes porque eles fazem parte das boas práticas de Engenharia de Software (Livro Semantic Web, página 11), O DBIx::Class simplesmente mapeia o seu banco de dados relacional em classes usando objetos intermediários. (http://search.cpan.org/~abraxxa/DBIx-Class-0.08195/lib/DBIx/Class/Manual/Intro.pod)
 
+(WAL) (15/10/2011) - Se você não quer/precisa de/ um ORM, faça bom uso do L<DBI>
+que é a interface Perl independente de SGBD para acesso a banco de dados.
+
 =head2 Frameworks web.
 
 (TBR) (28/09/2011) - Existem muitos frameworks web disponíveis no mundo Perl. Porém, na minha opinião é recomendado a utilização do Catalyst, por ser um framework maduro, com uma comunidade solida e com um universo de módulos ao redor muito bem organizado. 
 
+(WAL) (15/10/2011) - Caso queira apenas construir um I<hotsite>, ou um pequeno
+website para sua comunidade/grupo/religão/etc, ou ainda para aquele amigo/parente
+que lhe importuna dia e noite, você pode usar o L<Web::Simple> que (como o próprio
+nome diz) é um framework destinado à construção de aplicações mais simples como
+os exemplos citados.
 
+=head2 Sistemas de modelo (template systems)
+
+(WAL) (15/10/2011) - É um software que processa um ou mais modelos para produzir
+algum documento, tendo como uma das suas várias aplicações o desenvolvimento de
+aplicações web a fim de prozudir o conteúdo de uma resposta. Dentre os vários
+existentes na CPAN, cito:
+
+=over 4
+
+=item L<Template>
+
+=item L<HTML::Zoom>
+
+=item L<Mason>
+
+=back

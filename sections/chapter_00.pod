@@ -42,5 +42,7 @@ perguntas.
 
 =item * TBR: Thiago Rondon (http://search.cpan.org/~tbr)
 
+=item * WAL: Wallace Reis (http://search.cpan.org/~wreis)
+
 =back
 
