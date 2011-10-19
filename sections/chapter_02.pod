@@ -58,4 +58,12 @@ Perl monger próximo a você.
 
 (MAR) (30/09/2011) - Para esta pergunta há um livro (https://github.com/chromatic/modern_perl_book/), e ainda dentro deste assunto, o chromatic fez um post bacana, quem esta começando a programar Perl ou quer melhorar, recomendo http://www.modernperlbooks.com/mt/2011/09/how-to-learn-perl.html
 
+=head2 Porque não deve instalar módulos do CPAN como root ?
+
+(DAN) (14/10/2011) - Os sistemas baseados em unix, geralmente vem Perl instalado por padrão e algumas programas instalados nas máquinas usam tais módulos, e instalar módulos do CPAN como root pode requisitar a atualização de algum módulo que é usado em algum programa do seu O.S causando problemas de retrocompatibilidade. Outro problema também, é que os unix-likes em geral tem o sistema de repositório desatualizado em relação aos módulos do CPAN, pode acontecer de
+você instalar um módulo, aí você instala algum programa do repositório que sobrescreve módulo e o módulo vem desatualizado e quebra a sua aplicação. Já aconteceu comigo no Ubuntu de ele atualizar o "perl-modules" e ele literalmente deletar toda pasta dos módulos e instalar de novo. Você deve instalar os módulos locais usando o local::lib, esse artigo explica, http://blog.blabos.org/2009/08/instalando-modulos-do-cpan-via-locallib/ .
+
+=head2 Porque não se deve trocar a versão do compilador do meu O.S(unix-like)?
+
+(DAN) (14/10/2011) - Porque a maioria dos unix-likes já vem com Perl instalado por padrão, e alguns programas usam o módulos do Perl, quando se troca a versão do compilador acontece incompatibilidade binária com os módulos que não são pure perl e nem sempre eles estão no CPAN, quebrando assim alguns programas do seu O.S. Uma vez eu troquei a versão do compilador 5.8.8 para a 5.10.1 no FreeBSD e tive graves problemas, várias ferramentas pararam de funcionar. Aprenda a ter quantas versões do compilador você quiser sem ter problemas, http://sao-paulo.pm.org/equinocio/2011/set/3
 
