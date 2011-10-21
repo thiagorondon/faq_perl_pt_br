@@ -1,7 +1,5 @@
 =encoding utf-8
 
-=head0 Expressões regulares
-
 =head1 Expressões regulares
 
 =head2 Como eu posso efetuar uma comparação aproximada em uma string ?
@@ -12,7 +10,7 @@
 
 (MAR) (18/10/2011) Perl é famoso (e as vezes assustador) por seu incrível
 suporte *nativo* a expressões regulares. Infelizmente alguns programadores não
-utilizam recursos da liguagem para tornar seu código mais legível, como o
+utilizam recursos da linguagem para tornar seu código mais legível, como o
 modificador //x (veja mais sobre http://perldoc.perl.org/perlretut.html#Building-a-regexp) , que permite você
 segregar sua expressão em blocos, linhas, ou qualquer coisa que _humanos_ possam ler mais facilmente.
 
@@ -26,4 +24,36 @@ Mas até para expressões bizarras, o CPAN tem solução, L<YAPE::Regex::Explain
 
     say YAPE::Regex::Explain->new($regex)->explain;
 
+
+=head2 Como capturar todos os resultados de uma expressão regular?
+
+(JRM) (21/10/2011) Expressões regulares são muito utilizadas para realizar captura de vários dados
+em uma única string. Quando você utiliza o operador =~, os resultados da captura são inseridos
+em variáveis especiais como $1 para o primeiro match, $2 para o segundo match e assim em diante
+se a expressão regular possui a flag global (//g).
+
+Se necessário, você pode colocar todos os resultados da captura em um único array.
+
+    #!/usr/bin/env perl
+    my $string = '3u qu3r0 c4ptur4r 70d05 0s num3r0s d3s74 s7r1ng';
+    my @results = $string =~ /(\d+)/g;
+    
+
+=head2 Onde encontrar expressões regulares prontas?
+
+(JRM) (21/10/2011) As expressões regulares são implementadas na maioria das linguagens de
+programação, o que facilita muito ao buscar algo pronto em sites pela internet a fora.
+O módulo L<Regexp::Common|http://search.cpan.org/perldoc?Regexp::Common>. no CPAN oferece muitas alternativas prontas de expressões regulares.
+
+    use Regexp::Common qw(URI);
+    my $urls = [
+        'http://www.google.com.br/',
+        'http://www.perl.org/',
+        'htp://invalid/',
+        'http://sao-paulo.pm.org/',
+        'foo',
+    ];
+
+    say $_ . ': ' . (/$RE{URI}{HTTP}/ ? 'Valida' : 'Invalida')
+      for @{$urls};
 
