@@ -46,5 +46,7 @@ perguntas.
 
 =item * WAL: Wallace Reis (http://search.cpan.org/~wreis)
 
+=item * JRM: Junior Moraes (http://search.cpan.org/~fvox)
+
 =back
 
